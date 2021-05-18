@@ -1,0 +1,171 @@
+/* ---------------------- next category ---------------------- */
+
+/* reverse Shop Grid and Cart, move cart under shop grid */
+body[data-rootcatid="5"] #wrap > div.container.oe_website_sale > div.row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* ---------------------- next category ---------------------- */
+
+/* reverse Shop Grid and Cart, move cart under shop grid */
+body[data-rootcatid="6"] #wrap > div.container.oe_website_sale > div.row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+/* ---------------------- next category ---------------------- */
+
+/* reverse Shop Grid and Cart, move cart under shop grid */
+body[data-rootcatid="7"] #wrap > div.container.oe_website_sale > div.row {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* correctly hide Stuff and keep screenreaders intact*/
+/* best practices https://stackoverflow.com/questions/26032089/in-html-how-can-i-have-text-that-is-only-accessible-for-screen-readers-i-e-fo */
+/* special config for making this process as "unshopify" as possible" */
+body[data-rootcatid="8"] #payment_method,
+body[data-rootcatid="8"] .payment_interval_ids,
+body[data-rootcatid="8"] .row.ppt_opc-small_cart, /*warenkorb ausblenden ist keine Gute Idee weil andere Produkte drinne sein könnten*/
+body[data-rootcatid="7"] #payment_method,
+body[data-rootcatid="7"] .payment_interval_ids,
+body[data-rootcatid="7"] .row.ppt_opc-small_cart,/*warenkorb ausblenden ist keine Gute Idee weil andere Produkte drinne sein könnten*/
+body[data-rootcatid="6"] .payment_interval_ids,
+body[data-rootcatid="6"] #payment_method,
+body[data-rootcatid="6"] .row.ppt_opc-small_cart,/*warenkorb ausblenden ist keine Gute Idee weil andere Produkte drinne sein könnten*/
+body[data-rootcatid="5"] .payment_interval_ids,
+body[data-rootcatid="5"] #payment_method,
+body[data-rootcatid="5"] .row.ppt_opc-small_cart { /*warenkorb ausblenden ist keine Gute Idee weil andere Produkte drinne sein könnten*/
+    position: absolute !important; /* Outside the DOM flow */
+    height: 1px; width: 1px; /* Nearly collapsed */
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+    clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
+}
+
+/* HIde Download Button on the OPC Checkout Page to ensure you have to give your details */
+
+body[data-rootcatid="8"] .webshop_download_file,
+body[data-rootcatid="7"] .webshop_download_file,
+body[data-rootcatid="6"] .payment_interval_ids,
+body[data-rootcatid="5"] .webshop_download_file{
+    display: none;
+}
+
+html[data-view-xmlid="website.dankeandaschristkind"] img.img.img-responsive:hover {
+      transition: transform 1s !important; /* Animation */
+      transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+body[data-rootcatid="8"] .oe_product_cart .quick_add_to_cart .a-submit.fa-shopping-cart:before,
+body[data-rootcatid="7"] .oe_product_cart .quick_add_to_cart .a-submit.fa-shopping-cart:before,
+body[data-rootcatid="6"] .oe_product_cart .quick_add_to_cart .a-submit.fa-shopping-cart:before,
+body[data-rootcatid="5"] .oe_product_cart .quick_add_to_cart .a-submit.fa-shopping-cart:before {
+        padding-right: 5px;
+        content: " ";
+    content: "Mein Christkind";
+}
+body[data-rootcatid="8"] .hidemeforchristmas,
+body[data-rootcatid="7"] .hidemeforchristmas,
+body[data-rootcatid="6"] .hidemeforchristmas,
+body[data-rootcatid="5"] .hidemeforchristmas {
+    display: none;
+}
+body[data-rootcatid="8"] .oe_product_cart .quick_add_to_cart,
+body[data-rootcatid="7"] .oe_product_cart .quick_add_to_cart,
+body[data-rootcatid="6"] .oe_product_cart .quick_add_to_cart,
+body[data-rootcatid="5"] .oe_product_cart .quick_add_to_cart {
+    display: none;
+}
+body[data-rootcatid="8"] .text-info.oe_subdescription,
+body[data-rootcatid="7"] .text-info.oe_subdescription,
+body[data-rootcatid="6"] .text-info.oe_subdescription,
+body[data-rootcatid="5"] .text-info.oe_subdescription {
+    display: none;
+}
+body[data-rootcatid="8"] #products_grid section > h5,
+body[data-rootcatid="7"] #products_grid section > h5,
+body[data-rootcatid="6"] #products_grid section > h5,
+body[data-rootcatid="5"] #products_grid section > h5 {
+    text-align: center;
+    font-size: 28px;
+}
+body[data-rootcatid="8"] .checkoutbox_product_image,
+body[data-rootcatid="7"] .checkoutbox_product_image,
+body[data-rootcatid="6"] .checkoutbox_product_image,
+body[data-rootcatid="5"] .checkoutbox_product_image {
+    margin-bottom: 10px;
+}
+body[data-rootcatid="8"] .ppt_opc .price_donate_suggested,
+body[data-rootcatid="7"] .ppt_opc .price_donate_suggested,
+body[data-rootcatid="6"] .ppt_opc .price_donate_suggested,
+body[data-rootcatid="5"] .ppt_opc .price_donate_suggested {
+  border-radius: 10px;
+}
+
+body[data-rootcatid="8"] .price_donate_suggested_currency,
+body[data-rootcatid="7"] .price_donate_suggested_currency,
+body[data-rootcatid="6"] .price_donate_suggested_currency,
+body[data-rootcatid="5"] .price_donate_suggested_currency {
+    margin-left: 12px !important;
+}
+body[data-rootcatid="8"] #wrap > div.container.oe_website_sale > div:nth-child(1) > div > form > div,
+body[data-rootcatid="7"] #wrap > div.container.oe_website_sale > div:nth-child(1) > div > form > div,
+body[data-rootcatid="6"] #wrap > div.container.oe_website_sale > div:nth-child(1) > div > form > div,
+body[data-rootcatid="5"] #wrap > div.container.oe_website_sale > div:nth-child(1) > div > form > div {
+    display: none;
+}
+body[data-rootcatid="8"] .amount_title,
+body[data-rootcatid="7"] .amount_title,
+body[data-rootcatid="6"] .amount_title,
+body[data-rootcatid="5"] .amount_title {
+    color: #777777;
+    font-size: 16px;
+}
+body[data-rootcatid="8"] #description_sale .text-muted,
+body[data-rootcatid="7"] #description_sale .text-muted,
+body[data-rootcatid="6"] #description_sale .text-muted,
+body[data-rootcatid="5"] #description_sale .text-muted {
+    color: #DC0000;
+    font-size: 20px;
+}
+body[data-rootcatid="8"] div#description_sale,
+body[data-rootcatid="7"] div#description_sale,
+body[data-rootcatid="6"] div#description_sale,
+body[data-rootcatid="5"] div#description_sale {
+    background-color: #fff;
+   -moz-box-shadow:    inset 0 0 10px #DC0000;
+   -webkit-box-shadow: inset 0 0 10px #DC0000;
+   box-shadow:         inset 0 0 10px #DC0000;
+    width: fit-content;
+    max-width: 412px;
+    margin: auto;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+
+}
+body[data-rootcatid="8"] div#description_sale:before,
+body[data-rootcatid="7"] div#description_sale:before,
+body[data-rootcatid="6"] div#description_sale:before,
+body[data-rootcatid="5"] div#description_sale:before {
+        content: "Ich wünsche mir zu Weihnachten:";
+}
+
+body[data-rootcatid="8"] #products_grid_before,
+body[data-rootcatid="7"] #products_grid_before,
+body[data-rootcatid="6"] #products_grid_before,
+body[data-rootcatid="5"] #products_grid_before {
+    display: none;
+}
+body[data-rootcatid="2"] #products_grid_before,
+body[data-rootcatid="3"] #products_grid_before {
+    display: initial;
+}
+body[data-rootcatid="2"] #products_grid_before ul.nav.nav-pills.nav-stacked.mt16,
+body[data-rootcatid="3"] #products_grid_before ul.nav.nav-pills.nav-stacked.mt16,
+body[data-rootcatid="4"] #products_grid_before ul.nav.nav-pills.nav-stacked.mt16 {
+    display: none;
+}
