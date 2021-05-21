@@ -70,6 +70,7 @@
             <link rel='stylesheet' href='/vian_config/static/src/css/vian_02_shop_categories.css' t-ignore="true"/>
             <link rel='stylesheet' href='/vian_config/static/src/css/vian_08_christkindaktion.css' t-ignore="true"/>
             <link rel='stylesheet' href='/vian_config/static/src/css/vian_09_glyphicons.css' t-ignore="true"/>
+            <link rel='stylesheet' href='/vian_config/static/src/css/vian_10_paralaxtest.css' t-ignore="true"/>
         </xpath>
     </template>
      <template id="vian_relauch_custom_css" inherit_id="website.layout" name="vian Relauch Custom CSS">

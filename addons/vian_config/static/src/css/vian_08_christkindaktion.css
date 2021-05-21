@@ -129,7 +129,7 @@ body[data-rootcatid="8"] #description_sale .text-muted,
 body[data-rootcatid="7"] #description_sale .text-muted,
 body[data-rootcatid="6"] #description_sale .text-muted,
 body[data-rootcatid="5"] #description_sale .text-muted {
-    color: #DC0000;
+    color: #f49800;
     font-size: 20px;
 }
 body[data-rootcatid="8"] div#description_sale,
@@ -137,9 +137,9 @@ body[data-rootcatid="7"] div#description_sale,
 body[data-rootcatid="6"] div#description_sale,
 body[data-rootcatid="5"] div#description_sale {
     background-color: #fff;
-   -moz-box-shadow:    inset 0 0 10px #DC0000;
-   -webkit-box-shadow: inset 0 0 10px #DC0000;
-   box-shadow:         inset 0 0 10px #DC0000;
+   -moz-box-shadow:    inset 0 0 10px #f49800;
+   -webkit-box-shadow: inset 0 0 10px #f49800;
+   box-shadow:         inset 0 0 10px #f49800;
     width: fit-content;
     max-width: 412px;
     margin: auto;

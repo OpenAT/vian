@@ -1,0 +1,109 @@
+/* add first line before the page start and close div at the end ... in HTML and add one class
+<div id="website_petition_additional_bg" class="specialparalaxxsection paralaxx petition_bg1">
+    <div id="wrap" class="specialparalaxxsection fso_subscription_wrap fso_subscription_wrap_3">
+      <div class="specialparalaxxsection container fsosubscription_container">
+*/
+
+/*.wrapwrap {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.specialparalaxxsection
+ {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.paralaxx::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.container.fsosubscription_container
+ {
+  background: #ededee82;
+}
+
+.petition_bg1::after {
+  background-image: url('http://127.0.0.1:8069/website/image/product.template/4_7fc5938/parallax_image');
+}
+
+.paralaxx petition_bg2::after {
+  background-image: url('http://127.0.0.1:8069/website/image/product.template/4_7fc5938/parallax_image');
+}*/
+
+/* Test wie auf produkt, dazu einfügen im HTML Editor auf der Petitionsseite */
+/*
+<div id="website_petition_additional_bg" class="specialparalaxxsection paralaxx petition_bg1">
+    <div id="wrap" t-att-class="'fso_subscription_wrap fso_subscription_wrap_'+str(mlist.id)">
+      <div class="paralaxx container fsosubscription_container">
+*/
+
+#website_petition_additional_bg {
+    background-image: url(/website/image/product.template/4_7fc5938/parallax_image);
+    background-attachment: scroll;
+     background-position: 0px 0px;
+}
+#website_petition_additional_bg.paralaxx {
+    background-size: cover;
+    overflow: hidden;
+}
+#website_petition_additional_bg.parallax > div > div {
+    position: relative;
+    display: table;
+    width: 100%;
+    min-height: 200px;
+}
+
+#website_petition_additional_bg .container:before {
+    display: table;
+    content: " ";
+}
+#website_petition_additional_bg .container:after {
+    display: table;
+    content: " ";
+}
+
+#website_petition_additional_bg.parallax > div > div > div {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 32px 0;
+}
+
+#website_petition_additional_bg #fso_subscription_right {
+    background-color: #f49800a6;
+}
+#website_petition_additional_bg div.carousel-inner > div,
+#website_petition_additional_bg #fso_subscription_bottom > section.mb0.oe_orange.mt0,
+#website_petition_additional_bg #fso_subscription_bottom > section.mb16.mt0.oe_orange {
+    background-color: #f49800a6 !important
+}
+#website_petition_additional_bg div.carousel div.carousel-content {
+    padding-left: 20px;
+}
+#website_petition_additional_bg #fso_subscription_right {
+    margin-top: 0px;
+}
+#website_petition_additional_bg #fso_subscription_right {
+    padding-bottom: 0px;
+    border: 1px solid #f49800a6;
+}
+
+#website_petition_additional_bg #fso_subscription_main_row {
+    margin-right: 0px;
+}

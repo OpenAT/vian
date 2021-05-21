@@ -94,3 +94,15 @@ body .oe_orange {
     background-color: #f49800 !important;
     color: white;
 }
+
+/* Petition Dynamische Anzeige */
+#subscription_info > div.progress.subscription_progress_bar {
+    height: 3rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border: 0.11111111rem solid #f49800;
+    background-color: #f49800;
+    background-image: -webkit-repeating-linear-gradient(-30deg,#f49800,#f49800 5px,#CF7300 5px,#CF7300 10px);
+    background-image: repeating-linear-gradient(-30deg,#f49800,#f49800 5px,#CF7300 5px,#CF7300 10px);
+    position: relative;
+}
