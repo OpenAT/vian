@@ -106,3 +106,22 @@ body .oe_orange {
     background-image: repeating-linear-gradient(-30deg,#f49800,#f49800 5px,#CF7300 5px,#CF7300 10px);
     position: relative;
 }
+
+/* Sticky CSS */
+.top-nav-collapse{
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+}
+
+#wrapwrap .navbar-static-top,
+#wrapwrap .navbar-static-bottom {
+z-index: 999 !important;
+//  transition: height .5s ease-in-out;
+background-color: #0a85dd;
+opacity: 0.9;
+//  width: 100%;
+//  position: fixed;
+transition: height .5s ease-in-out;
+transition-property: background, opacity;
+}

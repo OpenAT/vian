@@ -73,6 +73,11 @@
             <link rel='stylesheet' href='/vian_config/static/src/css/vian_10_paralaxtest.css' t-ignore="true"/>
         </xpath>
     </template>
+    <template id="assets_frontend_vian" inherit_id="website.assets_frontend" name="vian theme">
+        <xpath expr="." position="inside">
+            <script src="/vian_config/static/src/js/sticky.js"></script>
+        </xpath>
+    </template>
      <template id="vian_relauch_custom_css" inherit_id="website.layout" name="vian Relauch Custom CSS">
          <xpath expr="//head" position="inside">
 <!--
