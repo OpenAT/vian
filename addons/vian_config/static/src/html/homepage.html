@@ -7,39 +7,54 @@
 
 <TITLE>Das ist Deine Homepage</TITLE>
 
+<!-- FS-Online widgets-resize-scripts -->
+<script type="text/javascript" src="http://vian.datadialog.net/website_widget_manager/static/lib/iframe-resizer/js/iframeResizer.min.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+        document.addEventListener("DOMContentLoaded", function(event) {
+            iFrameResize({baseUrl: 'http://vian.datadialog.net', addUrlParams: 'aswidget=True', heightCalculationMethod: 'taggedElement', checkOrigin: false, enablePublicMethods: true, useGetParam: true, inPageLinks: false, inPageAnchors: true, log: false}, '.fso_iframe')
+        });
+    //]]>
+</script>
 </HEAD>
 
+<div style="height: 95px; text-align: center; background-color: grey;">
+    Das ist der HEADER
+</div>
 <BODY BGCOLOR="FFFFFF">
+<div style="text-align: center; margin: auto;">
+    <div style="border: 1px solid grey">Hier gehts zu anderen Webseiten<br></br>
 
-<CENTER><IMG SRC="https://vian.datadialog.net/website/image/ir.attachment/126_dc94716/datas" ALIGN="BOTTOM"> </CENTER>
+        Hier ist anderer Inhalt deiner Webseite in deinem Wordpress, Typo3, Joomla ... was auch immer du fuer ein CMS hast.<br></br>
 
-<HR>
+</div>
 
-<a href="https://www.datadialog.net">Link Name</a>
+    <H1>Die Obercoole Ueberschrift</H1>
 
-Hier gehts zu anderen Webseiten
+    <H2>Eine Mega Tolle Ueberschrift</H2>
 
-Hier ist anderer Inhalt deiner Webseite in deinem Wordpress, Typo3, Joomla ... was auch immer du für ein CMS hast.
-
-Hier möchtest du unsere Form, Unsere Funktion unser Feature einbetten .
+    <CENTER><IMG SRC="http://vian.datadialog.net/website/image/ir.attachment/126_dc94716/datas" ALIGN="BOTTOM"> </CENTER>
 
 
-<H1>Die Obercoole Überschrift</H1>
 
-<H2>Eine Mega Tolle Überschrift</H2>
+    Schick uns eine Email <a href="mailto:support@yourcompany.com">
 
-Schick uns eine Email <a href="mailto:support@yourcompany.com">
+    support@datadialog.net</a>.
 
-support@datadialog.net</a>.
+    <p> ein weiterer Absatz!
+    </p>
+    Hier moechtest du unsere Form, Unsere Funktion unser Feature einbetten .
+<iframe id="fso_if2" class="fso_iframe" src="http://vian.datadialog.net/fso/form/2?aswidget=True" scrolling="no" frameborder="0" width="100%" style="width:100%; border:none; padding:0; margin:0;"></iframe>
 
-<P> ein weiterer Absatz!
+    <p> <B>usw.......!</B>
 
-<P> <B>usw.......!</B>
+    <BR> <B><I>Ein Satz ohne Absatz, Fett und Italic.</I></B>
 
-<BR> <B><I>Ein Satz ohne Absatz, Fett und Italic.</I></B>
-
-<HR>
-
+    </p>
+</div>
+<div style="height: 200px; text-align: center; color: white; background-color: orange;">
+    Das ist der Footer
+</div>
 </BODY>
 
 </HTML>
