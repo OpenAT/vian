@@ -29,6 +29,6 @@
         </li>
     </xpath>
     </template>
-
+    <!-- Dummy section to trigger instance update, delete if no longer needed. U1 -->
 </data>
 </openerp>
